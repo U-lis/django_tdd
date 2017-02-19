@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django_extensions',
+    'django_nose',
     'superlists',
 ]
 
@@ -79,8 +80,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'mydb',
-        "USER": "ulismoon",
-        "PASSWORD": "camilla3407",
+        "USER": "root",
+        "PASSWORD": "camilla3407*",
         "HOST": "",
         "PORT": "", 
     }
@@ -124,3 +125,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
 
 STATIC_URL = '/static/'
+
+# Django-nose
+TEST_RUNNER = "django_nose.NoseTestSuiteRunner"
