@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django_extensions',
     'django_nose',
     'superlists',
+    "lists",
 ]
 
 MIDDLEWARE = [
